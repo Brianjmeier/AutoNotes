@@ -8,7 +8,7 @@ driver = webdriver.Firefox() if README.browser else webdriver.Chrome()
 
 # Get new note from Whatsapp
 driver.get('https://web.whatsapp.com')
-time.sleep(5)
+time.sleep(7)
 xpath = "//*[@title='{}']".format(README.group_name)
 elem = driver.find_element_by_xpath(xpath)
 elem.click()
