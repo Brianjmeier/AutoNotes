@@ -55,7 +55,7 @@ class AutoNotes:
     def keep_sync(self):
         self.keep.sync()
 
-    def create_note(self, notes):
+    def create_notes(self, notes):
         for note in notes:
             try:
                 title, text = note.split(' - ')
@@ -76,5 +76,5 @@ if __name__ == '__main__':
     auto_notes.clear_notes()
     auto_notes.close_driver()
     auto_notes.keep_log_in()
-    auto_notes.create_note(notes)
+    auto_notes.create_notes(notes)
     auto_notes.keep_sync()
